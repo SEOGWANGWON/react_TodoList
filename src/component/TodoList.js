@@ -53,7 +53,7 @@ function App() { // 동일
 
   useEffect(() => {
       console.log('todos 변경됨 : ' , todos );
-      document.title = `오늘 할일은 ${todos}`;
+      document.title = `오늘 할일은 ${todos.length} 개 입니다.`;
     
       
 

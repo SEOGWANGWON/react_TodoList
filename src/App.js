@@ -5,6 +5,7 @@ import Header from './component/Header';
 import Footer from './component/Footer';
 import './css/App.css';
 import Home from './component/Home';
+import Board from './component/Board';
 
 
 
@@ -21,12 +22,16 @@ function App(){
             <li>
               <Link to="/todo">할 일 목록</Link>
             </li>
+            <li>
+              <Link to="/board">게시판</Link>
+            </li>
           </ul>
         </nav>
         <hr />
         <Routes>
-          <Route path="/Home" element={<Home/>}/>
+          <Route path="/" element={<Home/>}/>
           <Route path="/todo" element={<TodoList/>}/>
+          <Route path="/board" element={<Board/>}/>
         </Routes>
         <Footer/>
       </div>
